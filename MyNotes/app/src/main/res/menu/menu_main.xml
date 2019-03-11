@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <!--tools:context="com.rocqjones.intoverflown.mynotes.MainActivity"-->
+
+    <item
+        android:id="@+id/add"
+        android:orderInCategory="100"
+        android:title="+"
+        android:icon="@drawable/ic_add_circle"
+        app:showAsAction="always" />
+</menu>
