@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--HomePage-->
+
+    <!--ScrollView pane falls in DashBoard-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <GridLayout
+            android:id="@+id/gridLId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            android:stretchMode="columnWidth"
+            android:visibility="invisible">
+            <!--we set invisible inorder to customize the bottom navigation bar-->
+
+            <ImageButton
+                android:id="@+id/maize"
+                android:layout_width="50dp"
+                android:layout_height="150dp"
+                android:layout_margin="1dp"
+                android:layout_column="0"
+                android:layout_row="0"
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/maize"
+                android:onClick="maize"/>
+
+            <ImageButton
+                android:id="@+id/beans"
+                android:layout_width="50dp"
+                android:layout_height="150dp"
+                android:layout_margin="1dp"
+                android:layout_column="1"
+                android:layout_row="0"
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/beans"
+                android:onClick="beans"/>
+
+            <ImageButton
+                android:id="@+id/cowpeas"
+                android:layout_width="50dp"
+                android:layout_height="150dp"
+                android:layout_margin="1dp"
+                android:layout_column="0"
+                android:layout_row="1"
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/cowpeas"
+                android:onClick="cowpeas"/>
+
+            <ImageButton
+                android:id="@+id/tomatoes"
+                android:layout_width="50dp"
+                android:layout_height="150dp"
+                android:layout_margin="1dp"
+                android:layout_column="1"
+                android:layout_row="1"
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/tomatoes"
+                android:onClick="tomatoes"/>
+
+            <ImageButton
+                android:id="@+id/potatoes"
+                android:layout_width="50dp"
+                android:layout_height="150dp"
+                android:layout_margin="1dp"
+                android:layout_column="0"
+                android:layout_row="2"
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/potatoes"
+                android:onClick="potatoes"/>
+
+            <ImageButton
+                android:id="@+id/onions"
+                android:layout_width="50dp"
+                android:layout_height="150dp"
+                android:layout_margin="1dp"
+                android:layout_column="1"
+                android:layout_row="2"
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/onions"
+                android:onClick="onions"/>
+
+            <ImageButton
+                android:id="@+id/fruits"
+                android:layout_width="50dp"
+                android:layout_height="150dp"
+                android:layout_margin="1dp"
+                android:layout_column="0"
+                android:layout_row="3"
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/fruits"
+                android:onClick="fruits"/>
+
+            <ImageButton
+                android:id="@+id/coconuts"
+                android:layout_width="50dp"
+                android:layout_height="150dp"
+                android:layout_margin="1dp"
+                android:layout_column="1"
+                android:layout_row="3"
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/coconuts"
+                android:onClick="coconuts"/>
+
+            <ImageButton
+                android:id="@+id/othernuts"
+                android:layout_width="50dp"
+                android:layout_height="150dp"
+                android:layout_margin="1dp"
+                android:layout_column="0"
+                android:layout_row="4"
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/othernuts"
+                android:onClick="othernuts"/>
+
+            <ImageButton
+                android:id="@+id/carrots"
+                android:layout_width="50dp"
+                android:layout_height="150dp"
+                android:layout_margin="1dp"
+                android:layout_column="1"
+                android:layout_row="4"
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/carrots"
+                android:onClick="carrots"/>
+
+            <ImageButton
+                android:id="@+id/greenpeas"
+                android:layout_width="50dp"
+                android:layout_height="150dp"
+                android:layout_margin="1dp"
+                android:layout_column="0"
+                android:layout_row="5"
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/greenpeas"
+                android:onClick="greenpeas"/>
+
+            <ImageButton
+                android:id="@+id/fish"
+                android:layout_width="50dp"
+                android:layout_height="150dp"
+                android:layout_margin="1dp"
+                android:layout_column="1"
+                android:layout_row="5"
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/fish"
+                android:onClick="fish"/>
+
+            <ImageButton
+                android:id="@+id/coffee"
+                android:layout_width="50dp"
+                android:layout_height="150dp"
+                android:layout_margin="1dp"
+                android:layout_column="0"
+                android:layout_row="6"
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/coffee"
+                android:onClick="coffee"/>
+
+            <ImageButton
+                android:id="@+id/tea"
+                android:layout_width="50dp"
+                android:layout_height="150dp"
+                android:layout_margin="1dp"
+                android:layout_column="1"
+                android:layout_row="6"
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/tea"
+                android:onClick="tea"/>
+
+            <ImageButton
+                android:id="@+id/rice"
+                android:layout_width="50dp"
+                android:layout_height="150dp"
+                android:layout_margin="1dp"
+                android:layout_column="0"
+                android:layout_row="7"
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/rice"
+                android:onClick="rice"/>
+
+            <ImageButton
+                android:id="@+id/pyrethrum"
+                android:layout_width="50dp"
+                android:layout_height="150dp"
+                android:layout_margin="1dp"
+                android:layout_column="1"
+                android:layout_row="7"
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/pyrethrum"
+                android:onClick="pyrethrum"/>
+
+            <ImageButton
+                android:id="@+id/sugarcane"
+                android:layout_width="50dp"
+                android:layout_height="150dp"
+                android:layout_margin="1dp"
+                android:layout_column="0"
+                android:layout_row="8"
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/sugarcane"
+                android:onClick="sugarcane"/>
+
+            <ImageButton
+                android:id="@+id/sunflower"
+                android:layout_width="50dp"
+                android:layout_height="150dp"
+                android:layout_margin="1dp"
+                android:layout_column="1"
+                android:layout_row="8"
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/sunflower"
+                android:onClick="sunflower"/>
+
+            <ImageButton
+                android:id="@+id/poutry"
+                android:layout_width="50dp"
+                android:layout_height="150dp"
+                android:layout_margin="1dp"
+                android:layout_column="0"
+                android:layout_row="9"
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/poutry"
+                android:onClick="poutry"/>
+
+        </GridLayout>
+
+    </ScrollView>
+
+    <!--On Products-->
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:text="@string/title_home"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:fontFamily="sans-serif-black"/>
+
+    <!--This is the Bottom Navigation bar-->
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/windowBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/navigation" />
+
+</android.support.constraint.ConstraintLayout>

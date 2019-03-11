@@ -1,0 +1,31 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.rocqjones.intoverflown.sharedprefencesdemo.MainActivity">
+
+    <!--IC icons made with material design plugin-->
+    <item
+        android:id="@+id/homeIC"
+        android:orderInCategory="100"
+        android:title="Home"
+        android:icon="@drawable/ic_home"/>
+
+    <item
+        android:id="@+id/profileIC"
+        android:orderInCategory="100"
+        android:title="profile"
+        android:icon="@drawable/ic_tag_faces"/>
+
+    <item
+        android:id="@+id/settingsIC"
+        android:orderInCategory="100"
+        android:title="Settings"
+        android:icon="@drawable/ic_settings"/>
+
+    <item
+        android:id="@+id/logoutIC"
+        android:orderInCategory="100"
+        android:title="LogIn"
+        android:icon="@drawable/ic_lock_open"/>
+
+</menu>
