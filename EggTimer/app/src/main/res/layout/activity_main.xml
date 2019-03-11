@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    tools:context=".MainActivity">
+
+
+    <SeekBar
+        android:id="@+id/timerSeekBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="35dp"
+        android:src="@drawable/egg"
+        android:contentDescription="@string/eggdesc" />
+
+    <EditText
+        android:id="@+id/timerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300dp"
+        android:inputType="textPersonName"
+        android:text="00:30"
+        android:textFontWeight="10em"
+        android:textSize="30pt"
+        android:autofillHints="@null" />
+
+    <Button
+        android:id="@+id/controllerBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="500dp"
+        android:background="@android:color/holo_red_dark"
+        android:text="GO!"
+        android:onClick="controlTimer" />
+
+</RelativeLayout>
