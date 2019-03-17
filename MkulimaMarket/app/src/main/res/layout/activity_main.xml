@@ -312,7 +312,355 @@
 
     </ScrollView>
 
-    <!--On Products-->
+    <!--Onclick ImageButtonView takes you to Buying and Selling-->
+    <RelativeLayout
+        android:id="@+id/buyingAndSellingRelView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/buyandsellbackground"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:visibility="invisible">
+
+        <!--Buying btn-->
+        <Button
+            android:id="@+id/buying"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:layout_marginTop="150dp"
+            android:layout_centerHorizontal="true"
+            android:text="Buying"
+            android:textSize="30dp"
+            android:gravity="fill"
+            android:textColor="@android:color/background_dark"
+            android:background="@android:color/holo_green_light"
+            android:onClick="buying"/>
+
+        <!--Selling btn-->
+        <Button
+            android:id="@+id/selling"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:layout_marginTop="300dp"
+            android:layout_centerHorizontal="true"
+            android:text="Selling"
+            android:textSize="30dp"
+            android:gravity="fill"
+            android:textColor="@android:color/background_dark"
+            android:background="@android:color/holo_green_light"
+            android:onClick="selling"/>
+
+    </RelativeLayout>
+
+    <!--Buying Layout-->
+    <RelativeLayout
+        android:id="@+id/buyersRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/holo_green_light"
+        android:visibility="invisible">
+
+        <!--Product Name-->
+        <TextView
+            android:id="@+id/productNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product Name:"
+            android:editable="false"
+            android:textSize="16dp"
+            android:textColor="@android:color/black"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"/>
+        <EditText
+            android:id="@+id/productNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textSize="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="130dp"
+            android:inputType="textPersonName"
+            android:text="" />
+
+        <!--Product Quantity-->
+        <TextView
+            android:id="@+id/productQuantityTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product Quantity:"
+            android:editable="false"
+            android:textSize="16dp"
+            android:textColor="@android:color/black"
+            android:padding="10dp"
+            android:layout_marginTop="60dp"/>
+        <EditText
+            android:id="@+id/productQuantityText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textSize="16dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="130dp"
+            android:inputType="textPersonName"
+            android:text="" />
+
+        <!--Buyers Location-->
+        <TextView
+            android:id="@+id/buyersLocationTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buyers Location:"
+            android:editable="false"
+            android:textSize="16dp"
+            android:textColor="@android:color/black"
+            android:padding="10dp"
+            android:layout_marginTop="110dp"/>
+        <EditText
+            android:id="@+id/buyersLocationText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textSize="16dp"
+            android:layout_marginTop="110dp"
+            android:layout_marginLeft="130dp"
+            android:inputType="textPersonName"
+            android:text="" />
+
+        <!--Buyers Contact-->
+        <TextView
+            android:id="@+id/buyersContactTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buyers Contact:"
+            android:editable="false"
+            android:textSize="16dp"
+            android:textColor="@android:color/black"
+            android:padding="10dp"
+            android:layout_marginTop="160dp"/>
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textSize="16dp"
+            android:layout_marginTop="160dp"
+            android:layout_marginLeft="130dp"
+            android:inputType="phone" />
+
+        <!--Buyers Tag Price-->
+        <TextView
+            android:id="@+id/buyersTagPriceTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buying Price(Ksh@KG):"
+            android:editable="false"
+            android:textSize="16dp"
+            android:textColor="@android:color/black"
+            android:padding="10dp"
+            android:layout_marginTop="210dp"/>
+        <EditText
+            android:id="@+id/buyingPriceText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textSize="16dp"
+            android:layout_marginTop="210dp"
+            android:layout_marginLeft="180dp"
+            android:inputType="textPersonName"
+            android:text="" />
+
+        <!--Product Description-->
+        <TextView
+            android:id="@+id/productDescriptionTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buyers Product Description:"
+            android:editable="false"
+            android:textSize="16dp"
+            android:textColor="@android:color/black"
+            android:padding="10dp"
+            android:layout_marginTop="260dp"/>
+
+        <EditText
+            android:id="@+id/productDescriptionText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textSize="16dp"
+            android:layout_marginTop="280dp"
+            android:inputType="textMultiLine"
+            android:text=""/>
+
+        <!--Submit Purchase-->
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:textSize="18dp"
+            android:text="submit purchase"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/black"
+            android:background="@android:color/holo_green_dark"
+            android:layout_marginTop="400dp"/>
+
+    </RelativeLayout>
+
+    <!--Selling Layout-->
+    <RelativeLayout
+        android:id="@+id/sellersRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/holo_green_light"
+        android:visibility="invisible">
+
+        <!--Product Name-->
+        <TextView
+            android:id="@+id/saleproductNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product Name:"
+            android:editable="false"
+            android:textSize="16dp"
+            android:textColor="@android:color/black"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"/>
+        <EditText
+            android:id="@+id/saleproductNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textSize="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="130dp"
+            android:inputType="textPersonName"
+            android:text="" />
+
+        <!--Product Quantity-->
+        <TextView
+            android:id="@+id/saleproductQuantityTView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product Quantity:"
+            android:editable="false"
+            android:textSize="16dp"
+            android:textColor="@android:color/black"
+            android:padding="10dp"
+            android:layout_marginTop="60dp"/>
+        <EditText
+            android:id="@+id/saleproductQuantityText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textSize="16dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="130dp"
+            android:inputType="textPersonName"
+            android:text="" />
+
+        <!--Sellers Location-->
+        <TextView
+            android:id="@+id/sellersLocationTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sellers Location:"
+            android:editable="false"
+            android:textSize="16dp"
+            android:textColor="@android:color/black"
+            android:padding="10dp"
+            android:layout_marginTop="110dp"/>
+        <EditText
+            android:id="@+id/sellersLocationText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textSize="16dp"
+            android:layout_marginTop="110dp"
+            android:layout_marginLeft="130dp"
+            android:inputType="textPersonName"
+            android:text="" />
+
+        <!--Sellers Contact-->
+        <TextView
+            android:id="@+id/sellersContactTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sellers Contact:"
+            android:editable="false"
+            android:textSize="16dp"
+            android:textColor="@android:color/black"
+            android:padding="10dp"
+            android:layout_marginTop="160dp"/>
+        <EditText
+            android:id="@+id/sellersContactText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textSize="16dp"
+            android:layout_marginTop="160dp"
+            android:layout_marginLeft="130dp"
+            android:inputType="phone" />
+
+        <!--Sellers Tag Price-->
+        <TextView
+            android:id="@+id/sellersTagPriceTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selling Price(Ksh@KG):"
+            android:editable="false"
+            android:textSize="16dp"
+            android:textColor="@android:color/black"
+            android:padding="10dp"
+            android:layout_marginTop="210dp"/>
+        <EditText
+            android:id="@+id/sellingPriceText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textSize="16dp"
+            android:layout_marginTop="210dp"
+            android:layout_marginLeft="180dp"
+            android:inputType="textPersonName"
+            android:text="" />
+
+        <!--Sale Description-->
+        <TextView
+            android:id="@+id/saleDescriptionTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sellers Product Description:"
+            android:editable="false"
+            android:textSize="16dp"
+            android:textColor="@android:color/black"
+            android:padding="10dp"
+            android:layout_marginTop="260dp"/>
+
+        <EditText
+            android:id="@+id/saleDescriptionText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textSize="16dp"
+            android:layout_marginTop="280dp"
+            android:inputType="textMultiLine"
+            android:text=""/>
+
+        <!--Submit Sale-->
+        <Button
+            android:id="@+id/saleBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:textSize="18dp"
+            android:text="submit Sales"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/black"
+            android:background="@android:color/holo_green_dark"
+            android:layout_marginTop="400dp"/>
+
+    </RelativeLayout>
 
     <TextView
         android:id="@+id/message"
