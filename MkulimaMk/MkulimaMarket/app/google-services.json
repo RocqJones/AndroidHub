@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1039102934445",
+    "firebase_url": "https://mkulima-af4ba.firebaseio.com",
+    "project_id": "mkulima-af4ba",
+    "storage_bucket": "mkulima-af4ba.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1039102934445:android:fa3f1d4fd467af97",
+        "android_client_info": {
+          "package_name": "com.rocqjones.intoverflown.mkulimamarket"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1039102934445-utf969p83bsgt3qgaptu2nffjigcqas4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rocqjones.intoverflown.mkulimamarket",
+            "certificate_hash": "f3b5a84d042ef01ab3731c679246c0d832c3f63e"
+          }
+        },
+        {
+          "client_id": "1039102934445-56v002vshh194l09o8d3pcguhkoqshad.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXR11XWFRWE280N7989oe-CHaX2OiHrbE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1039102934445-56v002vshh194l09o8d3pcguhkoqshad.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

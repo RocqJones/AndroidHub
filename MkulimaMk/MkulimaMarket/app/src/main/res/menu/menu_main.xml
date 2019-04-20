@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.rocqjones.intoverflown.sharedprefencesdemo.MainActivity">
+
+    <!--IC icons made with material design plugin-->
+
+    <item
+        android:id="@+id/reportIt"
+        android:orderInCategory="100"
+        android:title="Report"
+        android:icon="@drawable/ic_description_black_24dp" />
+
+    <item
+        android:id="@+id/logoutIC"
+        android:orderInCategory="100"
+        android:title="LogOut"
+        android:icon="@drawable/ic_lock_open" />
+
+</menu>

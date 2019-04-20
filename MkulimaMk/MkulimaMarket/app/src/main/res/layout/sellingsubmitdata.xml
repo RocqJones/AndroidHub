@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/holo_green_light"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SellingSubmitDataActivity">
+
+    <!--Selling Layout-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="8dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <!--Product Name-->
+        <TextView
+            android:id="@+id/productTextName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:editable="false"
+            android:padding="10dp"
+            android:text="Product Name:"
+            android:textColor="@android:color/black"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/productEdNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/productTextName"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="@string/maize"
+            android:inputType="textCapWords"
+            android:text=""
+            android:textSize="16sp" />
+
+        <!--Product Quantity-->
+        <TextView
+            android:id="@+id/saleproductQuantityTView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/productTextName"
+            android:layout_marginTop="20dp"
+            android:editable="false"
+            android:padding="10dp"
+            android:text="@string/product_quantity"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/productQuantityEd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/saleproductQuantityTView"
+            android:layout_below="@+id/productEdNameText"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:inputType="number"
+            android:text=""
+            android:hint="@string/_40kg"
+            android:textSize="16dp" />
+
+        <!--Sellers Location-->
+        <TextView
+            android:id="@+id/sellersLocationTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/saleproductQuantityTView"
+            android:layout_marginTop="20dp"
+            android:editable="false"
+            android:padding="10dp"
+            android:text="@string/sellers_location"
+            android:textColor="@android:color/black"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/sellersNameEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/productQuantityEd"
+            android:layout_toRightOf="@+id/sellersLocationTextView"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="@string/location"
+            android:inputType="textCapWords"
+            android:textSize="16dp" />
+
+        <!--Sellers Tag Price-->
+        <TextView
+            android:id="@+id/sellersTagPriceTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sellersLocationTextView"
+            android:layout_marginTop="20dp"
+            android:editable="false"
+            android:padding="10dp"
+            android:text="@string/selling_price_ksh_kg"
+            android:textColor="@android:color/black"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/sellingPriceText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/sellersTagPriceTextView"
+            android:layout_below="@+id/sellersLocationTextView"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="40/="
+            android:inputType="number"
+            android:text=""
+            android:textSize="16dp" />
+
+        <!--Submit Sale-->
+        <Button
+            android:id="@+id/mSendButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/sellingPriceText"
+            android:layout_marginTop="30sp"
+            android:background="@drawable/button"
+            android:padding="20dp"
+            android:text="@string/submit_sales"
+            android:textColor="@android:color/black"
+            android:clickable="true"
+            android:textSize="18dp" />
+
+        <!--&lt;!&ndash;Submit Sale&ndash;&gt;-->
+        <!--<Button-->
+            <!--android:id="@+id/mSendButton"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:padding="20dp"-->
+            <!--android:textSize="18dp"-->
+            <!--android:text="submit Sales"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:textColor="@android:color/black"-->
+            <!--android:background="@android:color/holo_green_dark"-->
+            <!--android:clickable="true"-->
+            <!--android:layout_below="@id/saleDescriptionText"/>-->
+
+    <!--</RelativeLayout>-->
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

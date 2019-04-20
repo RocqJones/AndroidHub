@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Report">
+
+    <include layout="@layout/app_bar_layout" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp"
+        android:stretchColumns="1">
+        <TableRow>
+            <TextView
+                android:layout_marginTop="55dp"
+                android:text="@string/number_of_users"
+                android:padding="5dip" />
+
+            <TextView
+                android:layout_marginTop="55dp"
+                android:id="@+id/numberOfUsers"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="5dip"
+                android:text="" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="@string/number_of_farmers"
+                android:padding="5dip" />
+            <TextView
+                android:id="@+id/numberOfFarmers"
+                android:text=""
+                android:gravity="center"
+                android:padding="5dip" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="@string/number_of_consumers"
+                android:padding="5dip" />
+            <TextView
+                android:id="@+id/numberOfConsumers"
+                android:text=""
+                android:gravity="center"
+                android:padding="5dip" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="@string/high_demanded_product"
+                android:padding="5dip" />
+            <TextView
+                android:id="@+id/highDemndProduct"
+                android:text="Maize"
+                android:gravity="center"
+                android:padding="5dip" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="@string/frequent_contacted"
+                android:padding="5dip" />
+            <TextView
+                android:text="Mercy &amp; Jones Mbindyo"
+                android:gravity="center"
+                android:padding="5dip" />
+        </TableRow>
+
+        <!--Determined by highest quantity posted and number it is posted-->
+        <TableRow>
+            <TextView
+                android:text="@string/inflated_product"
+                android:padding="5dip" />
+            <TextView
+                android:id="@+id/inflatedProduct"
+                android:text=""
+                android:gravity="center"
+                android:padding="5dip" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="@string/least_inflated_product"
+                android:padding="5dip" />
+            <TextView
+                android:id="@+id/leastInflatedProduct"
+                android:text="Pyrethrum"
+                android:gravity="center"
+                android:padding="5dip" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/Qp"
+                android:text="@string/quoted_price"
+                android:padding="5dip" />
+            <TextView
+                android:text="Ksh. 33 - Ksh.95"
+                android:gravity="center"
+                android:padding="5dip" />
+        </TableRow>
+    </TableLayout>
+
+    <!--Graph-->
+    <!--<com.jjoe64.graphview.GraphView-->
+        <!--android:id="@+id/graph"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="200dip" />-->
+
+</android.support.constraint.ConstraintLayout>

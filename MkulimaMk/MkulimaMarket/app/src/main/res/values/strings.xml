@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Mkulima Market</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_Messages">Messages</string>
+    <string name="mkulima_market">Mkulima Market</string>
+    <string name="date">12/3/2019</string>
+    <string name="customer_name">Jones Mbindyo</string>
+    <string name="price">1300/=</string>
+    <string name="productName">Onions</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="onion">Onion</string>
+    <string name="product_quantity">Product quantity (Kgs/L):</string>
+    <string name="_40kg">40</string>
+    <string name="sellers_name">Seller name</string>
+    <string name="jones_mbindyo">Jones Mbindyo</string>
+    <string name="selling_price_ksh_kg">Price per product:</string>
+    <string name="submit_sales">Submit</string>
+    <string name="product">Product Name</string>
+    <string name="productQ">Product Q</string>
+    <string name="product_name">Product Name:</string>
+    <string name="_40">40/=</string>
+    <string name="location">Location</string>
+    <string name="maize">Maize</string>
+    <string name="sellers_location">Sellers Location:</string>
+    <string name="username">Username</string>
+    <string name="log_in">LOGIN</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="create_new_account">Create New Account Here?</string>
+    <string name="title_activity_report">Report</string>
+    <string name="number_of_users">Number Of Active USers</string>
+    <string name="number_of_farmers">Number Of Farmers</string>
+    <string name="high_demanded_product">High Demand Product</string>
+    <string name="number_of_consumers">Number Of Consumers</string>
+    <string name="frequent_contacted">Frequent Contacted</string>
+    <string name="inflated_product">Inflated Product</string>
+    <string name="least_inflated_product">Least Inflated Product</string>
+    <string name="quoted_price">Most Quoted Price Range</string>
+</resources>
