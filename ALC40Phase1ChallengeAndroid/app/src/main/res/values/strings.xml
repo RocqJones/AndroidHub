@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ALC4.0:Phase1Challenge- Android</string>
+    <string name="my_profile">MY PROFILE</string>
+    <string name="welcome_to_alc_4_0">Welcome to ALC 4.0</string>
+    <string name="about_alc">ABOUT ALC</string>
+    <string name="jones_mbindyo">Jones Mbindyo</string>
+    <string name="email_rocqjones_gmail_com">Email: rocqjones@gmail.com</string>
+    <string name="phone_number_254791423697">Phone Number: +254791423697</string>
+    <string name="country_kenya">Country: Kenya</string>
+    <string name="slack_username_rocqjones_tech">Slack Username: @ROCQJONES-TECH</string>
+    <string name="track_android">Track: Android</string>
+    <string name="todo">TODO</string>
+</resources>

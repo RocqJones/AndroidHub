@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    tools:context=".ActivityC">
+
+    <ImageView
+        android:id="@+id/profileIcon"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="fill"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/andelalogo"
+        android:onClick="selectImage"
+        android:contentDescription="@string/todo" />
+
+    <TextView
+        android:id="@+id/profileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/jones_mbindyo"
+        android:fontFamily="casual"
+        android:textSize="20sp"
+        android:layout_below="@+id/profileIcon"/>
+
+    <View
+        android:id="@+id/splitLine"
+        android:layout_width="match_parent"
+        android:layout_height= "1dp"
+        android:layout_below="@+id/profileName"
+        android:background="#333336" />
+
+    <TextView
+        android:id="@+id/track"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:layout_marginTop="16dp"
+        android:text="@string/track_android"
+        android:textSize="18sp"
+        android:layout_below="@id/splitLine"/>
+
+    <TextView
+        android:id="@+id/county"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:layout_marginTop="16dp"
+        android:text="@string/country_kenya"
+        android:textSize="18sp"
+        android:layout_below="@id/track"/>
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:layout_marginTop="16dp"
+        android:text="@string/email_rocqjones_gmail_com"
+        android:textSize="18sp"
+        android:layout_below="@id/county"/>
+
+    <TextView
+        android:id="@+id/phoneNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:layout_marginTop="16dp"
+        android:text="@string/phone_number_254791423697"
+        android:textSize="18sp"
+        android:layout_below="@id/email"/>
+
+    <TextView
+        android:id="@+id/slack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:layout_marginTop="16dp"
+        android:text="@string/slack_username_rocqjones_tech"
+        android:textSize="18sp"
+        android:layout_below="@id/phoneNo"/>
+
+</RelativeLayout>
